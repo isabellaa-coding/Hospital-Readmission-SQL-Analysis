@@ -1,225 +1,134 @@
-# Hospital-Readmission-SQL-Analysis
-# Hospital Readmission Analysis | SQL Project
+# Hospital Readmission SQL Analysis
 
 ## Project Overview
 
-This project analyzes synthetic hospital encounter data to evaluate factors associated with 30-day patient readmissions. The goal was to simulate a healthcare analytics workflow by designing a relational database, loading clinical data, and using SQL queries to identify trends in patient utilization and readmission risk.
+This project analyzes hospital encounter data to identify factors associated with **30-day hospital readmissions** using SQL.
 
-This project demonstrates the application of SQL and healthcare knowledge to analyze clinical data and generate insights that can support quality improvement and operational decision-making.
+The goal of this analysis is to demonstrate healthcare data analytics skills by exploring patient demographics, clinical conditions, hospital utilization patterns, and potential risk factors associated with readmission.
+
+This project applies SQL techniques commonly used in healthcare analytics, including data exploration, aggregation, filtering, grouping, and healthcare quality metric calculations.
 
 ---
 
 ## Objectives
 
-- Calculate overall 30-day hospital readmission rates
-- Identify diagnoses associated with higher readmission risk
-- Analyze patient utilization patterns
-- Evaluate hospital length of stay trends
-- Compare readmission rates by admission type and discharge disposition
-- Identify patients with increased readmission risk
+The analysis focuses on answering the following questions:
+
+- What is the overall 30-day hospital readmission rate?
+- Which diagnoses are associated with higher readmission rates?
+- Which patients may represent higher-risk populations?
+- How does length of stay vary across diagnoses?
+- Are chronic conditions associated with increased readmission patterns?
+
+---
+
+## Dataset
+
+The dataset contains **100 simulated hospital encounters** representing inpatient admissions.
+
+### Variables Included
+
+| Column | Description |
+|---|---|
+| Patient ID | Unique patient identifier |
+| Age | Patient age |
+| Gender | Patient gender |
+| Diagnosis | Primary diagnosis |
+| Admission Type | Emergency, urgent, or elective admission |
+| Length of Stay | Number of hospital days |
+| Number of Medications | Medications prescribed during admission |
+| Previous Admissions | Prior hospital admissions |
+| Diabetes | Presence of diabetes diagnosis |
+| Hypertension | Presence of hypertension diagnosis |
+| Readmitted Within 30 Days | Whether patient was readmitted within 30 days |
 
 ---
 
 ## Tools Used
 
-- MySQL
-- MySQL Workbench
 - SQL
+- MySQL
+- Healthcare Analytics
+- Clinical Quality Metrics
+- Data Exploration
 
 ---
 
-# Database Design
+## SQL Analysis Performed
 
-The database was created using a relational schema consisting of four connected tables:
+### 1. Data Exploration
 
----
+Reviewed hospital encounter records and calculated total patient encounters.
 
-## Tables
+### 2. 30-Day Readmission Rate
 
-### Patients
+Calculated the percentage of patients readmitted within 30 days using:
 
-Stores patient demographic information.
+```
+Readmission Rate =
+(Number of 30-Day Readmissions / Total Encounters) × 100
+```
 
-**Columns:**
+### 3. Diagnosis-Based Readmission Analysis
 
-- Patient ID
-- Age
-- Gender
-- Insurance Type
+Evaluated readmission trends across diagnoses to identify conditions associated with increased readmission frequency.
 
----
+### 4. High-Risk Patient Identification
 
-### Encounters
+Identified patients with multiple previous admissions to evaluate potential readmission risk factors.
 
-Stores hospital admission and discharge information.
+### 5. Length of Stay Analysis
 
-**Columns:**
+Analyzed average hospital length of stay by diagnosis.
 
-- Encounter ID
-- Patient ID
-- Admission Date
-- Discharge Date
-- Admission Type
-- Length of Stay
-- Discharge Disposition
+### 6. Chronic Condition Analysis
+
+Reviewed readmission trends among patients with chronic conditions including diabetes and hypertension.
 
 ---
 
-### Diagnoses
+## Key Findings
 
-Stores clinical diagnoses associated with each hospital encounter.
+*(Update these after running your SQL queries)*
 
-**Columns:**
-
-- Diagnosis ID
-- Encounter ID
-- Diagnosis Name
-- Diagnosis Category
+- Overall 30-day readmission rate: **XX%**
+- Diagnoses with the highest readmission rates: **XX**
+- Patients with multiple previous admissions demonstrated increased readmission risk.
+- Longer hospital stays were observed among higher-acuity diagnoses.
 
 ---
 
-### Readmissions
+## Clinical Relevance
 
-Stores whether a patient was readmitted within 30 days.
+Hospital readmissions are an important healthcare quality metric used to evaluate patient outcomes, care coordination, and opportunities for improvement.
 
-**Columns:**
-
-- Readmission ID
-- Patient ID
-- Encounter ID
-- Readmitted Within 30 Days
+This analysis demonstrates how healthcare data can be used to identify trends, support quality improvement initiatives, and guide data-informed decision-making.
 
 ---
 
-# Analysis Performed
+## Future Improvements
 
-## 1. Overall 30-Day Readmission Rate
+Potential future enhancements include:
 
-Calculated the percentage of hospital encounters resulting in a readmission within 30 days.
-
-**Metric:**
-
----
-
-## 2. Diagnosis-Based Readmission Analysis
-
-Evaluated which diagnoses were associated with higher readmission rates.
-
-Conditions analyzed included:
-
-- Heart Failure
-- COPD
-- Pneumonia
-- Diabetes
-- Stroke
-
----
-
-## 3. High-Risk Patient Identification
-
-Analyzed patient characteristics associated with increased utilization, including:
-
-- Multiple hospital encounters
-- Previous readmissions
-- Demographic factors
-
----
-
-## 4. Length of Stay Analysis
-
-Calculated average hospital length of stay by diagnosis to identify conditions associated with longer admissions.
-
----
-
-## 5. Admission Type Analysis
-
-Compared readmission patterns across:
-
-- Emergency admissions
-- Urgent admissions
-- Elective admissions
-
----
-
-## 6. Discharge Disposition Analysis
-
-Evaluated whether discharge destination influenced readmission risk.
-
-Dispositions analyzed:
-
-- Home
-- Rehabilitation Facility
-- Skilled Nursing Facility
-
----
-
-# SQL Skills Demonstrated
-
-- Relational database design
-- Creating database schemas
-- Primary keys and foreign keys
-- Data relationships
-- INNER JOIN operations
-- Aggregations
-- GROUP BY analysis
-- CASE statements
-- WHERE and HAVING filters
-- Healthcare KPI calculations
-- Clinical data analysis
-
----
-
-# Example Business Questions Answered
-
-### What percentage of patients are readmitted within 30 days?
-
-Calculated the overall hospital readmission rate.
-
----
-
-### Which diagnoses have the highest readmission rates?
-
-Compared readmission outcomes across clinical conditions.
-
----
-
-### Which patients demonstrate higher utilization?
-
-Identified patients with repeat encounters and readmission events.
-
----
-
-### Do emergency admissions have higher readmission rates?
-
-Compared readmission outcomes based on admission type.
-
----
-
-### Does discharge destination affect readmission risk?
-
-Evaluated readmission patterns by discharge disposition.
-
----
-
-# Project Files
-
----
-
-# Future Improvements
-
-Future enhancements could include:
-
-- Expanding the dataset with additional hospital encounters
-- Adding laboratory values and vital signs
-- Incorporating comorbidity scoring
-- Adding medication data
+- Expanding the dataset with additional patient encounters
+- Creating visual dashboards using Power BI or Tableau
+- Incorporating additional clinical variables
 - Developing predictive models for readmission risk
-- Creating healthcare dashboards for quality reporting
+- Performing deeper analysis of utilization patterns
+
+
+## Why This Project?
+
+As a Registered Nurse transitioning into healthcare analytics, I wanted to explore how clinical data can be used to identify trends, improve patient outcomes, and support quality improvement initiatives.
+
+Hospital readmissions are an important healthcare quality metric because they can reflect gaps in care coordination, chronic disease management, and discharge planning. By analyzing patient encounter data, this project demonstrates how SQL can be used to transform healthcare data into meaningful insights that support clinical and operational decision-making.
+
+This project combines my clinical background with my growing technical skills in SQL and healthcare analytics to better understand how data can be leveraged to improve patient care.
 
 ---
 
-# About This Project
+## Author
 
-This project was created to demonstrate the intersection of healthcare and data analytics by applying SQL skills to a clinical dataset.
+**Isabella**
 
-The project reflects common data structures found in electronic medical record (EMR) systems and demonstrates how healthcare data can be organized, analyzed, and used to identify trends in patient outcomes.
+Registered Nurse transitioning into Healthcare Analytics with an interest in leveraging clinical experience and data analysis to improve healthcare outcomes.
