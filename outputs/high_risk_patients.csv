@@ -1,0 +1,28 @@
+patient_id,age,diagnosis,previous_admissions,diabetes,hypertension,length_of_stay
+1030,80,COPD,5,No,Yes,10
+1014,66,Stroke,4,No,No,7
+1073,68,COPD,4,No,Yes,3
+1113,69,Heart Failure,4,No,Yes,11
+1005,67,Heart Failure,3,No,No,5
+1011,58,Heart Failure,3,No,Yes,7
+1016,67,Stroke,3,No,No,11
+1034,75,Heart Failure,3,Yes,Yes,9
+1060,74,Diabetes,3,Yes,No,6
+1077,79,COPD,3,No,No,6
+1081,67,Stroke,3,No,No,10
+1099,60,Heart Failure,3,No,No,9
+1106,73,Heart Failure,3,No,Yes,10
+1111,62,COPD,3,No,Yes,6
+1006,89,Stroke,2,Yes,Yes,8
+1019,59,Heart Failure,2,Yes,Yes,8
+1048,74,COPD,2,Yes,Yes,6
+1063,65,Diabetes,2,Yes,Yes,5
+1112,61,Diabetes,2,Yes,Yes,3
+1027,80,Pneumonia,1,Yes,Yes,3
+1041,64,COPD,1,Yes,Yes,7
+1045,70,Diabetes,1,Yes,Yes,2
+1046,69,Stroke,1,Yes,Yes,6
+1089,67,Stroke,1,Yes,Yes,6
+1121,75,Diabetes,1,Yes,Yes,1
+1020,60,Pneumonia,0,Yes,Yes,5
+1026,71,Diabetes,0,Yes,Yes,6
