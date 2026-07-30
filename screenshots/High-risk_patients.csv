@@ -1,0 +1,71 @@
+patient_id,age,diagnosis,previous_admissions,length_of_stay
+1047,86,Stroke,8,15
+1087,83,"Heart Failure",8,13
+1066,72,Stroke,7,13
+1055,78,Stroke,7,14
+1076,81,"Heart Failure",7,12
+1017,85,Stroke,7,14
+1096,79,COPD,7,12
+1033,82,"Heart Failure",7,12
+1017,85,Stroke,7,14
+1090,74,COPD,6,11
+1063,76,"Heart Failure",6,11
+1007,76,"Heart Failure",6,10
+1059,84,Stroke,6,12
+1044,70,"Heart Failure",6,11
+1082,77,"Heart Failure",6,10
+1023,74,Stroke,6,13
+1037,75,Stroke,6,13
+1007,76,"Heart Failure",6,10
+1023,74,Stroke,6,13
+1092,69,Stroke,6,12
+1070,80,Diabetes,5,10
+1019,73,"Heart Failure",5,9
+1019,73,"Heart Failure",5,9
+1072,74,COPD,5,11
+1005,81,Stroke,5,12
+1025,69,"Heart Failure",5,10
+1074,65,"Heart Failure",5,10
+1005,81,Stroke,5,12
+1030,77,COPD,5,11
+1099,72,"Heart Failure",5,10
+1013,79,"Heart Failure",5,8
+1085,71,COPD,5,10
+1025,69,"Heart Failure",5,10
+1051,73,"Heart Failure",5,10
+1041,79,COPD,5,10
+1080,53,Stroke,5,11
+1013,79,"Heart Failure",5,8
+1097,60,Stroke,4,9
+1049,68,"Heart Failure",4,9
+1079,62,COPD,4,9
+1021,67,COPD,4,8
+1003,68,Diabetes,4,7
+1031,60,Stroke,4,10
+1057,69,"Heart Failure",4,9
+1010,70,COPD,4,9
+1026,71,"Heart Failure",4,9
+1010,70,COPD,4,9
+1021,67,COPD,4,8
+1003,68,Diabetes,4,7
+1068,67,"Heart Failure",4,9
+1001,72,"Heart Failure",3,8
+1065,58,Diabetes,3,8
+1073,56,Stroke,3,8
+1061,52,COPD,3,8
+1053,66,Diabetes,3,8
+1078,70,Diabetes,3,7
+1050,57,Diabetes,3,7
+1042,58,Stroke,3,9
+1038,53,"Heart Failure",3,8
+1084,64,Diabetes,3,8
+1035,65,COPD,3,7
+1086,49,Stroke,3,9
+1028,64,Diabetes,3,8
+1015,63,Pneumonia,3,6
+1011,66,Stroke,3,11
+1093,57,"Heart Failure",3,8
+1001,72,"Heart Failure",3,8
+1015,63,Pneumonia,3,6
+1011,66,Stroke,3,11
+1100,65,Diabetes,3,7
