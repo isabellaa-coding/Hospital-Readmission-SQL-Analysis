@@ -90,8 +90,6 @@ Hospital-Readmission-SQL-Analysis/
 └── screenshots/                         # query results / ERD, referenced inline below
 ```
 
-> If your repo doesn't yet have `data/` and `outputs/` folders, this is a good next step — it separates source data from generated results and signals a clean, reproducible workflow to anyone reviewing the repo.
-
 ## Analysis & Key Findings
 
 ### 1. Data Exploration
