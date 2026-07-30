@@ -20,7 +20,7 @@ The most notable finding was that patients with both diabetes and hypertension h
 
 Stroke and Heart Failure patients also had the longest average stays and the highest medication counts, consistent with the clinical complexity of managing those conditions. In total, 27 patients met the criteria for high-risk (three or more prior admissions, or both chronic conditions present) — a list that could realistically support care coordination and discharge follow-up planning.
 
-## How I built it:
+## How I Built It:
 
 I designed and created the table in MySQL, then used CASE statements and aggregate functions to calculate readmission rates. I grouped and filtered the data to compare diagnoses, co-morbidities, and risk levels, used a window function (RANK() OVER) to rank patients by risk within their own diagnosis group, and built a reusable VIEW for the high-risk patient list so it could support downstream reporting or a dashboard.
 
